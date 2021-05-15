@@ -2,24 +2,11 @@ var txt="Loading...";
 var i=0;
 var load;
 var ifload = false;
-function loading(){
-    if(!ifload)return;
-    if (i < txt.length) {
-        load.innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(loading, 90);
-    }else{
-        load.innerHTML="";
-        i=0;
-        setTimeout(loading, 90);
-    }
-}
 function loadn(){
     ifload=true;
-    loading();
+    load.innerHTML="Loading..." ;
 }
 function unload(){
-    i=0;
     load.innerHTML="";
     ifload=false;
 }
@@ -32,4 +19,6 @@ window.onload = function(){
         bad.remove();
     }
     load=document.getElementById("loading");
+    bad.onprogress=loadn;
+    bad.onplaying=unload;
 }

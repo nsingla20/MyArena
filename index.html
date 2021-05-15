@@ -3,7 +3,15 @@
     <head>
         <title>MyARena|Naman Singla|IITK</title>
         <link rel="stylesheet" href="css/s.css" />
+        
+        <link rel="stylesheet" href="css/text.css" />
+        <link rel="stylesheet" href="css/icon.css" />
+        <link rel="stylesheet" href="css/pc.css" />
         <script src="js/f.js"></script>
+        <script
+            src="https://kit.fontawesome.com/ddc5d83792.js"
+            crossorigin="anonymous"
+        ></script>
         <meta charset="UTF-8" />
         <meta name="description" content="My own Website" />
         <meta name="keywords" content="HTML, CSS, JavaScript" />
@@ -11,18 +19,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <p id="loading"></p>
         <div class="header">
-            <h1 id="topic" style="margin: 0%">Naman Singla</h1>
+            <div id="topic">Naman Singla</div>
+            <ul>
+                <a href="https://github.com/nsingla20">
+                    <li>
+                        <i class="fab fa-github"></i></li
+                ></a>
+                <a href="https://www.facebook.com/naman.singla.185/">
+                    <li>
+                        <i class="fab fa-facebook"></i></li
+                ></a>
+                <li>
+                    <i class="fab fa-youtube"></i>
+                </li>
+                <a>
+                    <li>
+                        <i class="fas fa-code"></i>
+                    </li>
+                </a>
+            </ul>
         </div>
+        <div id="loading"></div>
+
         <video
             id="backVid"
-            src="http://home.iitk.ac.in/~nsingla20/backVid.mp4"
+            src="backVid.mp4"
             autoplay
             muted
             loop
             type="video/mp4"
-        >
-        </video>
+        ></video>
     </body>
 </html>

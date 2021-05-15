@@ -1,24 +1,24 @@
-var txt="Loading...";
-var i=0;
+var txt = "Loading...";
+var i = 0;
 var load;
 var ifload = false;
-function loadn(){
-    ifload=true;
-    load.innerHTML="Loading..." ;
+function loadn() {
+    ifload = true;
+    load.innerHTML = "Loading...";
 }
-function unload(){
-    load.innerHTML="";
-    ifload=false;
+function unload() {
+    load.innerHTML = "";
+    ifload = false;
 }
 var bad;
 
-
-window.onload = function(){
+window.onload = function () {
     bad = document.getElementById("backVid");
-    if(screen.availWidth<=768){
+    load = document.getElementById("loading");
+    if (screen.availWidth <= 768) {
         bad.remove();
+    } else {
+        bad.onprogress = loadn;
+        bad.onplaying = unload;
     }
-    load=document.getElementById("loading");
-    bad.onprogress=loadn;
-    bad.onplaying=unload;
-}
+};

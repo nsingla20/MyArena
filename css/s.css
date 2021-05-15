@@ -1,13 +1,16 @@
-body,p{
+body{
     margin: 0%;
     background-color: rgb(204, 197, 197);
-    padding: 0%;
+    padding: 10px;
     outline: 0px;
     outline-offset: 0px;
 }
-#backImg {
+/* .header > #icons{
+    float: right;
+} */
+/* #backImg {
     background-image: url(http://home.iitk.ac.in/~nsingla20/back.jpg);
-}
+} */
 #backVid {
     top: 0px;
     left: 0px;
@@ -17,37 +20,28 @@ body,p{
     z-index: -2;
 }
 .header {
+    overflow: hidden;
     margin: 0%;
-    position: static;
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    padding: 5px 5px 10px 40px;
+    padding: 0;
     background-color: rgb(38, 38, 46);
     border: 0px solid rgb(4, 4, 87);
-    outline-width: 0px;
-    outline-offset: 0px;
+    z-index:1;
 }
 #loading{
-    height:40px;
     color:crimson;
-    position: fixed;
-    top:0px;
-    width:100%;
+    width:300px;
+    margin:auto;
+    position: relative;
     font-size: 40px;
-    z-index: 5;
+    z-index: 2;
     background-color: transparent;
     text-align: center;
 }
-#topic{
-    overflow: hidden;
-    color: rgb(16, 150, 94);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-}
-#topic:hover{
-    color: crimson;
-}
+
 #btn{
     padding: 10px;
     background-color: rgb(192, 192, 207);
@@ -56,47 +50,5 @@ body,p{
 #btn:hover{
     background-color: indigo;
 }
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
 
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-    .col-2 {
-        width: 16.66%;
-    }
-    .col-3 {
-        width: 25%;
-    }
-    .col-4 {
-        width: 33.33%;
-    }
-    .col-5 {
-        width: 41.66%;
-    }
-    .col-6 {
-        width: 50%;
-    }
-    .col-7 {
-        width: 58.33%;
-    }
-    .col-8 {
-        width: 66.66%;
-    }
-    .col-9 {
-        width: 75%;
-    }
-    .col-10 {
-        width: 83.33%;
-    }
-    .col-11 {
-        width: 91.66%;
-    }
-    .col-12 {
-        width: 100%;
-    }
-}
+

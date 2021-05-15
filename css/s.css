@@ -1,3 +1,9 @@
+*{
+    width:max-content;
+    background-color: inherit;
+    margin: 0%;
+    padding: 0%;
+}
 body{
     margin: 0%;
     background-color: rgb(204, 197, 197);
@@ -11,6 +17,9 @@ body{
 /* #backImg {
     background-image: url(http://home.iitk.ac.in/~nsingla20/back.jpg);
 } */
+.header:hover{
+    cursor: default;
+}
 #backVid {
     top: 0px;
     left: 0px;
@@ -25,6 +34,8 @@ body{
     position: fixed;
     top: 0px;
     left: 0px;
+    height: 50px;
+    color: goldenrod;
     width: 100%;
     padding: 0;
     background-color: rgb(38, 38, 46);

@@ -1,39 +1,37 @@
-.header #icon{
-
+.header #icon {
     background-color: inherit;
     margin: 0;
     font-size: 40px;
 }
-.header ul{
+.header ul {
     list-style-type: none;
     float: right;
     margin: 0;
     height: 50px;
+    position: relative;
     padding: 0;
     background-color: rgb(226, 235, 227);
     font-size: 0px;
-    width:100%;
+    width: 100%;
 }
-.header ul li{
+.header ul li {
     background-color: inherit;
     display: inline;
     padding: 5px 15px;
     margin: 0;
     font-size: 0px;
 }
-.header ul li:hover,ul #icon:hover{
+.header ul li:hover,
+ul #icon:hover {
     background-color: rgb(5, 46, 82);
     color: rgb(227, 230, 90);
 }
-.header ul li i{
+.header ul li i {
     font-size: 40px;
 }
 @media only screen and (min-width: 768px) {
-    .header ul{
-        width:max-content;
+    .header ul {
+        width: max-content;
         float: right;
-    }
-    .header ul li{
-        
     }
 }

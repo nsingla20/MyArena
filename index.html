@@ -3,12 +3,14 @@
     <head>
         <title>MyARena|Naman Singla|IITK</title>
         <link rel="stylesheet" href="css/s.css" />
+        
         <link rel="stylesheet" href="css/body.css" />
         <link rel="stylesheet" href="css/text.css" />
         <link rel="stylesheet" href="css/icon.css" />
         <link rel="stylesheet" href="css/pc.css" />
+        <link rel="stylesheet" href="css/imagesilde.css" />
         <script src="js/f.js"></script>
-        
+
         <script
             src="https://kit.fontawesome.com/ddc5d83792.js"
             crossorigin="anonymous"
@@ -77,7 +79,7 @@
         </div>
         <video
             id="backVid"
-            src="https://home.iitk.ac.in/~nsingla20/backVid.mp4"
+            src="backVid.mp4"
             autoplay
             muted
             loop
@@ -110,12 +112,45 @@
                 </p>
             </div>
         </div>
-        <div id="main" class="container">
-            <div id="back" onclick="this.scrollBy(1000,0)">
-                <div class="img"><img src="natue.jpg" alt="Nature" /></div>
-                <div class="img"><img src="images.jpeg" alt="Hack" /></div>
-            </div>
+        <div id="main">
+            <section class="home">
+                <div class="slider">
+                    <div
+                        class="slide active"
+                        style="background-image: url(natue.jpg);background-repeat: no-repeat;"
+                    >
+                        <div class="inside">
+                            <div class="caption">
+                                <h1>Like reamin close to nature everytime</h1>
+                                <p>Central to the ecosystem concept is the idea that living organisms interact with every other element in their local environment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="slide"
+                        style="background-image: url(images.jpeg);background-repeat: no-repeat;"
+                    >
+                        <div class="inside">
+                            <div class="caption">
+                                <h1>Hacking World</h1>
+                                <p>
+                                    Likes to learn about new things that come in
+                                    technology, gives feeling of comething cool
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- controls  -->
+                <div class="controls">
+                    <div class="prev"><</div>
+                    <div class="next">></div>
+                </div>
+
+                <!-- indicators -->
+                <div class="indicator"></div>
+            </section>
         </div>
+        <script src="js/ani.js"></script>
     </body>
-    <script src="js/ani.js"></script>
 </html>

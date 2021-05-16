@@ -24,12 +24,13 @@
     color: rgb(223, 215, 215);
 }
 #main{
-    display: block;
+    margin: 30px;
+    display: flex;
     float: right;
     overflow: hidden;
     width: 100%;
 }
-#back{
+/* #back{
     position: relative;
     height: 500px;
     overflow: hidden;
@@ -45,7 +46,7 @@
 }
 .img img{
     width: 100%;
-}
+} */
 .side{
     width: 100%;
     padding: auto;
@@ -57,9 +58,9 @@
         border-radius: 60px;
         width: 300px;
     }
-    #back{
+    /* #back{
         height: 700px;
-    }
+    } */
     .side{
         float:left;
         width: 360px;
@@ -72,6 +73,6 @@
         max-width:70% ;
     }
 }
-#main div .img{
+/* #main div .img{
     width: 100%;
-}
+} */

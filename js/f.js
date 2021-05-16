@@ -11,8 +11,11 @@ function unload() {
     ifload = false;
 }
 var bad;
-
+var main;
+var img;
 window.onload = function () {
+    main=document.getElementById("main");
+    img=document.getElementById("img");
     bad = document.getElementById("backVid");
     load = document.getElementById("loading");
     if (screen.availWidth <= 768) {
@@ -21,4 +24,5 @@ window.onload = function () {
         bad.onprogress = loadn;
         bad.onplaying = unload;
     }
+    
 };

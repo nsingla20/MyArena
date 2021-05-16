@@ -24,10 +24,10 @@
     color: rgb(223, 215, 215);
 }
 #main{
-    margin: 30px;
     display: flex;
     float: right;
     overflow: hidden;
+    background-color: rgba(16, 28, 37, 0.623);
     width: 100%;
 }
 /* #back{
@@ -71,6 +71,8 @@
     }
     #main{
         max-width:70% ;
+        margin: 30px 30px;
+        border-radius: 60px;
     }
 }
 /* #main div .img{

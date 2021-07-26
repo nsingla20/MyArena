@@ -41,6 +41,7 @@
 
 .home .inside {
     flex-grow: 1;
+    padding: 30px;
 }
 .home .caption {
     width: 50%;

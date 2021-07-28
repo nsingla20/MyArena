@@ -4,13 +4,13 @@
     display: block;
     width:100%;
     position: relative;
-    
     background-color: rgba(16, 28, 37, 0.623);
     transition: transform 1s, outline 1s,width 1s,border-radius 1s;
 }
 .container:hover{
     background-color: rgb(7, 2, 1);
     outline: 5px solid rgba(92, 8, 226, 0.459);
+    border-radius: 0px;
     transform: scale(1.1,1.1);
 }
 .container p{
@@ -48,7 +48,7 @@
     width: 100%;
 } */
 .side{
-    width: 100%;
+    /* width: 100%; */
     padding: auto;
 }
 @media only screen and (min-width: 1280px){
